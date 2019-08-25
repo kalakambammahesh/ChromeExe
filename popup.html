@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <input type="submit" value="submit">
+   <!--<script src="popup.js"></script>--> 
+    <script>
+        chrome.tabs.getSelected(null, function(tab) {
+            tab = tab.id;
+            tabUrl = tab.url;
+            alert(tab.url)
+        });
+    </script>
+</body>
+</html>
